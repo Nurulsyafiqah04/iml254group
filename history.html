@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of Fashion | GenZ Fashion and Accessories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            position: relative;
+            z-index: 1;
+        }
+        .background-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        header, footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .content, .timeline-section {
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #ff6f61;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #333;
+            font-size: 2em;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        footer p {
+            margin: 0;
+        }
+
+  /* Dropdown CSS */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+    </header>
+    <nav>
+        <a class="active" href="index.html">HOME</a>
+        <a class="active" href="login.html">LOG IN</a>
+        <a class="active" href="manfashion.html">MEN FASHION</a>
+        <a class="active" href="womanfashion.html">WOMAN FASHION</a>
+        <a class="active" href="accessories.html">MAN AND WOMEN ACCECORIES</a>
+       
+     
+        
+        <div class="dropdown">
+            <a class="dropbtn" href="#">ABOUT FASHION</a>
+            <div class="dropdown-content">
+                <a href="history.html">Fashion history</a>
+                <a href="doanddonts.html">Fashion do & don'ts</a>
+                <a href="psychology.html">Fashion psychology</a>
+                <a href="fashioninfluencers.html">Fashion & digital influencer</a>
+                <a href="brand.html">Brand spotlight</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="dropbtn" href="#">PROFILE</a>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About us</a>
+                <a href="organization.html">Organization chart</a>
+             <a href="group.html">Group member</a>
+            </div>
+        </div>
+
+        <a class="active" href="feedback.html">FEEDBACK</a>
+    </nav>
+
+<style>
+        .timeline {
+            padding: 0;
+            list-style-type: none;
+            position: relative;
+        }
+        .timeline::before {
+            content: '';
+            background: #ff6f61;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            height: 100%;
+            z-index: 400;
+        }
+        .timeline-item {
+            padding: 20px 40px;
+            position: relative;
+            width: 50%;
+            left: 0;
+            box-sizing: border-box;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        .timeline-item::before {
+            content: '';
+            background: #ff6f61;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            z-index: 400;
+        }
+        .timeline-item:nth-child(odd)::before {
+            left: calc(50% - 10px);
+        }
+        .timeline-item:nth-child(even)::before {
+            left: calc(50% + 10px);
+        }
+        @media (max-width: 600px) {
+            .container {
+                gap: 20px;
+            }
+            .content, .timeline-section {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .timeline-item {
+                left: 0 !important;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item::before {
+                left: 15px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="image/greenscale.jpeg" class="background-img" alt="Background Image">
+    <header>
+        <h1>GenZ Fashion and Accessories</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h2>History of Fashion</h2>
+            <p>
+                Fashion, as an ever-evolving art form, has been an integral part of human culture since the dawn of civilization. The earliest forms of clothing were utilitarian, designed to protect against the elements. However, even in ancient times, there was a desire for aesthetics and differentiation. Ancient Egyptians, for example, adorned themselves with jewelry and wore linen garments that indicated social status. Similarly, in Mesopotamia, both men and women wore elaborately woven and decorated fabrics, showing the early intertwining of fashion and societal roles.
+            </p>
+            <p>
+                The classical periods of Greece and Rome further exemplify the importance of fashion in history. In Greece, clothing such as the chiton and himation were not only functional but also displayed elegance and simplicity, reflecting the philosophical ideals of the time. Romans adopted and adapted Greek styles, and their togas became symbols of citizenship and status. The use of colors, fabrics, and accessories in these civilizations marked the beginning of fashion as a means of personal expression and societal positioning.
+            </p>
+            <p>
+                The Middle Ages saw a significant shift in fashion, with the introduction of more structured garments and the use of luxurious materials. Clothing became a clear indicator of one's social rank. The feudal system's hierarchical nature was mirrored in the clothing choices of the time. Nobles and royalty wore elaborate, richly decorated clothing made of velvet, silk, and fur, while peasants' attire was simple and utilitarian. This period also saw the rise of sumptuary laws, which regulated the dress of different classes to maintain social order.
+            </p>
+            <p>
+                The Renaissance brought a renewed interest in art, culture, and fashion. Clothing became more elaborate and extravagant, reflecting the era's opulence and the wearer's wealth and status. Innovations in tailoring and the introduction of new fabrics such as brocade and lace allowed for more intricate designs. The Renaissance also saw the beginnings of fashion as a global phenomenon, with explorers bringing back textiles and styles from distant lands, influencing European fashion.
+            </p>
+            <p>
+                The Industrial Revolution of the 18th and 19th centuries revolutionized fashion. Advances in technology made clothing more accessible to the masses. The development of the sewing machine and the rise of ready-to-wear clothing transformed fashion from an artisan craft to a major industry. During this period, fashion also became more democratized, with trends spreading quickly through fashion magazines and the rise of department stores, making stylish clothing available to a broader audience.
+            </p>
+            <p>
+                In the 20th and 21st centuries, fashion has continued to evolve at a rapid pace. The emergence of haute couture, the influence of film and music, and the advent of the internet and social media have all played pivotal roles in shaping modern fashion. Today, fashion is a global industry worth billions, reflecting and influencing cultural and social trends. The rise of Gen Z has introduced new dynamics, with a focus on sustainability, inclusivity, and individuality. The history of fashion is a testament to humanity's creativity and desire for self-expression, constantly evolving to reflect the changing times.
+            </p>
+        </div>
+        <div class="timeline-section">
+            <h2>Interactive Timeline of Fashion</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <h3>Ancient Egypt</h3>
+                    <p>Adorned with jewelry and wore linen garments indicating social status.</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Classical Greece and Rome</h3>
+                    <p>Clothing such as the chiton and himation were elegant and simple.</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Middle Ages</h3>
+                    <p>More structured garments and luxurious materials indicating social rank.</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Renaissance</h3>
+                    <p>Elaborate clothing reflecting opulence and wealth.</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>Industrial Revolution</h3>
+                    <p>Technological advances made clothing more accessible to the masses.</p>
+                </li>
+                <li class="timeline-item">
+                    <h3>20th and 21st Centuries</h3>
+                    <p>Fashion continued to evolve rapidly, influenced by various factors.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 GenZ Fashion and Accessories</p>
+    </footer>
+</body>
+</html>
+

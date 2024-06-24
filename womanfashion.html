@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woman Fashion</title>
+    <style>
+
+body {
+background-image: url('wallpaper_group/background.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+color: white;
+
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: black;
+            background-color: pink;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            background: pink;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Section Styling */
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: pink;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Gallery Styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .item {
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .item h3 {
+            margin: 10px 0;
+            color: black;
+        }
+
+        .item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Lightbox Styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+  /* Dropdown CSS */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+    </header>
+    <nav>
+        <a class="active" href="index.html">HOME</a>
+        <a class="active" href="login.html">LOG IN</a>
+        <a class="active" href="manfashion.html">MEN FASHION</a>
+        <a class="active" href="womanfashion.html">WOMAN FASHION</a>
+        <a class="active" href="accessories.html">MAN AND WOMEN ACCECORIES</a>
+       
+     
+        
+        <div class="dropdown">
+            <a class="dropbtn" href="#">ABOUT FASHION</a>
+            <div class="dropdown-content">
+                <a href="history.html">Fashion history</a>
+                <a href="doanddonts.html">Fashion do & don'ts</a>
+                <a href="psychology.html">Fashion psychology</a>
+                <a href="fashioninfluencers.html">Fashion & digital influencer</a>
+                <a href="brand.html">Brand spotlight</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="dropbtn" href="#">PROFILE</a>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About us</a>
+                <a href="organization.html">Organization chart</a>
+             <a href="group.html">Group member</a>
+            </div>
+        </div>
+
+        <a class="active" href="feedback.html">FEEDBACK</a>
+    </nav>
+
+    <div class="dropdown">
+        <a class="dropbtn" href="#">PROFILE</a>
+        <div class="dropdown-content">
+            <a href="capturedmoments.html">About us</a>
+            <a href="aboutfamily.html">Organization chart</a>
+        </div>
+    </div>
+<a class="active" href="index.html">FEEDBACK</a>
+</nav>
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Woman Fashion</h1>
+    </header>
+    <section id="home">
+        <h2>Welcome to Our Fashion Collection</h2>
+        <p>Discover the latest trends and timeless designs.</p>
+    </section>
+    
+    <section id="collection">
+        <h2>Our Collection</h2>
+        <div class="gallery">
+            
+            <div class="item">
+                <a href="#img1"><img src="image_group/slides4.jpg" alt="Baju Kurung Songket"></a>
+                <h3>Baju Kurung Songket</h3>
+                <p>Traditional Malay outfit with intricate Songket weaving. Very suitable to wear during special occasions and festive days.</p>
+            </div>
+            <div class="item">
+                <a href="#img2"><img src="image_group/pahang.jpg" alt="Baju Kurung Pahang"></a>
+                <h3>Baju Kurung Pahang</h3>
+                <p>Classic Pahang style with modern touches. Look graceful and beautiful with a Pahang kurung dress by wearing natural make-up</p>
+            </div>
+            <div class="item">
+                <a href="#img3"><img src="image_group/modern.jpg" alt="Baju Kurung Moden Lace"></a>
+                <h3>Baju Kurung Moden Lace</h3>
+                <p>Modern Kurung with elegant lace details. The color black goes well with gray hijab. </p>
+            </div>
+            <div class="item">
+                <a href="#img4"><img src="image_group/vintage.jpg" alt="Vintage"></a>
+                <h3>Vintage</h3>
+                <p>Classic vintage style for a timeless look. Black tee and gray skirt is a perfect combo.</p>
+            </div>
+            <div class="item">
+                <a href="#img5"><img src="image_group/casual.jpg" alt="Smart Casual"></a>
+                <h3>Smart Casual</h3>
+                <p>Stylish and comfortable smart casual wear. This stripes sweater is goes well with skinny jeans.</p>
+            </div>
+            <div class="item">
+                <a href="#img6"><img src="image_group/slides1.jpg" alt="Streetwear"></a>
+                <h3>Streetwear</h3>
+                <p>Trendy and urban streetwear fashion. Be a fashionista by wearing a shirt or jacket outside and a white inner inside, matched with sneakers.</p>
+            </div>
+            
+        </div>
+
+    <footer>
+        <p>&copy; 2024 GEN Z FASHION TIPS. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modals -->
+    <div id="img1" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="picture/songket.jpg" alt="Baju Kurung Songket">
+    </div>
+    <div id="img2" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="picture/pahang.jpg" alt="Baju Kurung Pahang">
+    </div>
+    <div id="img3" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="picture/lace.jpg" alt="Baju Kurung Moden Lace">
+    </div>
+    <div id="img4" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="picture/vintage.jpg" alt="Vintage">
+    </div>
+    <div id="img5" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="picture/shirt.jpg" alt="Smart Casual">
+    </div>
+    <div id="img6" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <img src="picture/casual.jpg" alt="Streetwear">
+    </div>
+
+</body>
+</html>

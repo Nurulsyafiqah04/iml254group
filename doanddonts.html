@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Dos and Don'ts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            position: relative;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('wallpaper_group/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: #77b300 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .content {
+            padding: 20px;
+        }
+        .dos, .donts {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .dos h2, .donts h2 {
+            color: #77b300;
+        }
+        .dos ul, .donts ul {
+            list-style: none;
+            padding: 0;
+        }
+        .dos li, .donts li {
+            background: #e4e4e4;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 3px solid #77b300;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+        .donts li {
+            border-left: 3px solid #ff3333;
+        }
+        .details {
+            display: none; 
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #ccc;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        .open .details {
+            display: block;
+        }
+        .open li {
+            background: #d1d1d1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+
+  /* Dropdown CSS */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+
+    </header>
+    <nav>
+        <a class="active" href="index.html">HOME</a>
+        <a class="active" href="login.html">LOG IN</a>
+        <a class="active" href="manfashion.html">MEN FASHION</a>
+        <a class="active" href="womanfashion.html">WOMAN FASHION</a>
+        <a class="active" href="accessories.html">MAN AND WOMEN ACCECORIES</a>
+       
+     
+        
+        <div class="dropdown">
+            <a class="dropbtn" href="#">ABOUT FASHION</a>
+            <div class="dropdown-content">
+                <a href="history.html">Fashion history</a>
+                <a href="doanddonts.html">Fashion do & don'ts</a>
+                <a href="psychology.html">Fashion psychology</a>
+                <a href="fashioninfluencers.html">Fashion & digital influencer</a>
+                <a href="brand.html">Brand spotlight</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="dropbtn" href="#">PROFILE</a>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About us</a>
+                <a href="organization.html">Organization chart</a>
+             <a href="group.html">Group member</a>
+            </div>
+        </div>
+
+        <a class="active" href="feedback.html">FEEDBACK</a>
+    </nav>
+    </style>
+</head>
+
+<body>
+ 
+
+    <header>
+        <h1>Fashion Dos and Don'ts</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <section class="dos">
+                <h2>Fashion Dos</h2>
+                <ul>
+                    <li onclick="toggleDetails(this)">
+                        Do experiment with bold colors and patterns.
+                        <div class="details">
+                            <p>Experimenting with bold colors and patterns allows you to showcase your personality and creativity through fashion.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do mix and match vintage with modern pieces.
+                        <div class="details">
+                            <p>Combining vintage and modern pieces can create unique outfits that blend classic charm with contemporary flair.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do accessorize with statement pieces to elevate your look.
+                        <div class="details">
+                            <p>Adding statement accessories like bold jewelry or unique bags can instantly upgrade your outfit.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do support sustainable and ethical brands.
+                        <div class="details">
+                            <p>Choosing sustainable and ethical brands promotes responsible consumption and supports ethical practices in the fashion industry.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do wear what makes you feel confident and comfortable.
+                        <div class="details">
+                            <p>Your confidence and comfort are key to carrying any outfit with style.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do embrace gender-neutral fashion choices.
+                        <div class="details">
+                            <p>Gender-neutral fashion promotes inclusivity and allows everyone to express themselves freely through clothing.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do invest in timeless wardrobe staples.
+                        <div class="details">
+                            <p>Investing in timeless pieces like a classic blazer or well-fitted jeans ensures longevity and versatility in your wardrobe.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do layer your outfits for added texture and interest.
+                        <div class="details">
+                            <p>Layering adds depth to your outfit and allows you to play with different textures and colors.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do pay attention to shoe choice; they can make or break an outfit.
+                        <div class="details">
+                            <p>The right pair of shoes complements your outfit and enhances your overall look.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Do incorporate cultural influences respectfully into your style.
+                        <div class="details">
+                            <p>Respectfully integrating cultural elements into your fashion choices celebrates diversity and promotes cultural awareness.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="donts">
+                <h2>Fashion Don'ts</h2>
+                <ul>
+                    <li onclick="toggleDetails(this)">
+                        Don't overdo trends; find a balance that suits your style.
+                        <div class="details">
+                            <p>Avoid blindly following every trend. Instead, incorporate trends that resonate with your personal style and complement your wardrobe.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't ignore the fit; ensure your clothes complement your body shape.
+                        <div class="details">
+                            <p>Ill-fitting clothes can detract from your appearance. Choose garments that flatter your body shape and make you feel confident.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't be afraid to break fashion rules; personal style is key.
+                        <div class="details">
+                            <p>Fashion rules are meant to be broken. Experiment with unconventional combinations and styles to express your unique personality.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't sacrifice comfort for style; you can have both.
+                        <div class="details">
+                            <p>Comfort should not be compromised for the sake of fashion. Look for stylish pieces that also offer comfort and ease of movement.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't forget to personalize your outfits; add your unique touch.
+                        <div class="details">
+                            <p>Personalize your look with accessories, layering, or customizing pieces to reflect your individuality and stand out.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't wear clothes that don't make you feel confident, regardless of trends.
+                        <div class="details">
+                            <p>Your confidence is the best accessory. Avoid wearing anything that makes you feel uncomfortable or self-conscious.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't buy fast fashion items impulsively; consider their longevity.
+                        <div class="details">
+                            <p>Fast fashion items may be trendy but often lack quality and longevity. Make mindful purchases that align with your values and style.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't overlook the importance of proper clothing care and maintenance.
+                        <div class="details">
+                            <p>Proper care extends the lifespan of your clothes. Follow care instructions and store garments correctly to preserve their quality.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't limit yourself to one style; experiment with different aesthetics.
+                        <div class="details">
+                            <p>Exploring different styles allows you to discover what resonates with you. Mix and match elements from various aesthetics to create a unique look.</p>
+                        </div>
+                    </li>
+                    <li onclick="toggleDetails(this)">
+                        Don't neglect the impact of accessories; they can complete or clutter an outfit.
+                        <div class="details">
+                            <p>Accessories can elevate your outfit but choose them wisely. Opt for pieces that complement your attire rather than overwhelm it.</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 GenZ Fashion and Accessories</p>
+    </footer>
+
+    <script>
+        function toggleDetails(element) {
+            element.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

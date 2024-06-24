@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+  background-image: url('wallpaper_group/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  max-width: 1200px;
+  margin: 20px;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+ul.a {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul.a li {
+  padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7); 
+  color: white; 
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+ /* Dropdown CSS */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+
+
+    </header>
+    <nav>
+        <a class="active" href="index.html">HOME</a>
+        <a class="active" href="login.html">LOG IN</a>
+        <a class="active" href="manfashion.html">MEN FASHION</a>
+        <a class="active" href="womanfashion.html">WOMAN FASHION</a>
+        <a class="active" href="accessories.html">MAN AND WOMEN ACCECORIES</a>
+       
+     
+        
+        <div class="dropdown">
+            <a class="dropbtn" href="#">ABOUT FASHION</a>
+            <div class="dropdown-content">
+                <a href="history.html">Fashion history</a>
+                <a href="doanddonts.html">Fashion do & don'ts</a>
+                <a href="psychology.html">Fashion psychology</a>
+                <a href="fashioninfluencers.html">Fashion & digital influencer</a>
+                <a href="brand.html">Brand spotlight</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a class="dropbtn" href="#">PROFILE</a>
+            <div class="dropdown-content">
+                <a href="aboutus.html">About us</a>
+                <a href="organization.html">Organization chart</a>
+             <a href="group.html">Group member</a>
+            </div>
+        </div>
+
+        <a class="active" href="feedback.html">FEEDBACK</a>
+    </nav>
+
+</style>
+</head>
+<body>
+
+<center><h1>MORE ABOUT US</h1></center>
+<div class="container">
+  <div class="gallery">
+    <a target="_blank" href="wallpaper_group/motto.png">
+      <img src="wallpaper_group/motto.png" width="800" height="400">
+    </a>
+    <div class="desc"><strong>MOTTO:</strong></div>
+    <p class="center-text">All fashion is for you.</p>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="wallpaper_group/ourvision.png">
+      <img src="wallpaper_group/ourvision.png" width="800" height="400">
+    </a>
+    <div class="desc"><strong>OUR VISION:</strong></div>
+    <p class="center-text">Assisting the present and upcoming generations in gaining a deeper understanding of fashion and how to wear it so they can incorporate it into their daily lives.</p>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="wallpaper_group/mission.png">
+      <img src="wallpaper_group/mission.png" width="800" height="400">
+    </a>
+    <div class="desc"><strong>OUR MISSION:</strong></div>
+    <p class="center-text">Share our knowledge of fashion and offer useful advice that can serve as an inspiration.</p>
+  </div>
+
+  <div class="gallery">
+    <a target="_blank" href="wallpaper_group/objective.png">
+      <img src="wallpaper_group/objective.png" width="800" height="400">
+    </a>
+    <div class="desc"><strong>OUR OBJECTIVES:</strong></div>
+    <div class="center-text">
+      <p>Giving tips on styling clothes and accessories that can be matched together.</p>
+      <p>Knowing what fashion is and its history.</p>
+      <p>Know the latest fashion trends.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 GEN Z FASHION TIPS. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
